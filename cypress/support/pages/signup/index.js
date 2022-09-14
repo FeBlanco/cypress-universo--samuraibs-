@@ -1,11 +1,12 @@
 import { el } from './elements'
-
 import toast from '../../components/toast'
+import alert from '../../components/alert'
 
 class SignupPage {
 
     constructor() {
         this.toast = toast
+        this.alert = alert
     }
 
     go() {
@@ -15,22 +16,15 @@ class SignupPage {
 
     form(user) {
         //preenchendo e submentendo o formulário de cadastro
-        cy.get(el.name).type(user.name)
-        cy.get(el.email).type(user.email)
-        cy.get(el.password).type(user.password)
+        cy.get(el.name).clear().type(user.name)
+        cy.get(el.email).clear().type(user.email)
+        cy.get(el.password).clear().type(user.password)
 
     }
 
     submit() {
         cy.contains(el.signupButton).click()
     }
-
-    alertHaveText(expectText) {
-        cy.contains(el.alertError, expectText)
-            .should('be.visible')
-    }
-
-
 }
 
 export default new SignupPage()
