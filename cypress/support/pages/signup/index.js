@@ -11,7 +11,10 @@ class SignupPage {
 
     go() {
         //acessando a página de cadastro
-        cy.visit('/signup');
+        cy.visit('/signup')
+
+        cy.contains(el.title)
+            .should('be.visible')
     }
 
     form(user) {
