@@ -8,6 +8,8 @@ Este projeto foi criado com o intuito de estudar um pouco mais sobre cypress, at
 
 Nele automatizamos o sistema do Samurai Barbeshop feito exclusivamente para o curso, sendo um sistema de gerenciamento de barbearias, onde barbeiros e pessoas interessadas em seus serviços se conectam.
 
+![signup_spec_js_AdobeExpress](https://user-images.githubusercontent.com/43914674/193880338-081cb913-8384-4c94-83ba-6a5de5826ec0.gif)
+
 ### Instalação e Execução
 
 Para rodar o projeto, você  precisará do 
